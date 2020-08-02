@@ -12,8 +12,29 @@ public:
     complex();
     complex(float, float);
     ~complex();
-    friend ostream & operator<<(ostream&, const complex&);
-    friend istream & operator>>(istream&, complex&);
+    const complex operator+(const complex& cmp);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    friend ostream& operator<<(ostream&, const complex&);
+    friend istream& operator>>(istream&, complex&);
     const complex operator+(const complex& other);
     const complex operator-(const complex& other);
     const complex operator*(const complex& other);

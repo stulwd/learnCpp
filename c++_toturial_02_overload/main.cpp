@@ -41,7 +41,7 @@ int main(void){
     const computer com4 = com1->getMax(*com1, *com2); 
     computer com5 = com1->getMax(*com1, *com2); 
     //computer& com6 = com1->getMax(*com1, *com2);
-
+    
     com3.getCore();         //如果com3是const类型，可以调用被const修饰的成员函数
     //com3.setCore(10750);    //如果com3是const类型，不可以调用没有被const修饰的成员函数
 }
@@ -83,10 +83,11 @@ void testInteger(){
     int3 = int1 % int2;             //重载后写法
     cout << "int1 % int2的结果" << int3.intValue() << endl;
     int3 = int1;
-    int3 = 20;
+    int3 = 20;      //这里20也自动转换成了一个integer的对象
     cout << int3 << endl;
     integer int4(100);
-    int4 = int1 + 200;
+    //重载了+运算符，虽然operator+的参数是一个interger对象，但是200自动转换成了interger对象，所以可以直接加
+    int4 = int1 + 200;          
     int4 = 200 + int1;
     cout << "int4:" << int4.intValue() << endl;
     cout << "int4:" << int4 << endl;        //重载了流运算符后可以直接打印int4

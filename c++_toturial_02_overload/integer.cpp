@@ -11,12 +11,12 @@ const integer operator+(int intValue, const integer& other)
         return integer(intValue + other.m_value);
 }
 
-ostream & operator<<(ostream & out, const integer & num)
+ostream& operator<<(ostream& out, const integer& num)
 {
         out << num.m_value;
         return out;
 }
-istream & operator>>(istream & in,  integer & num)
+istream& operator>>(istream& in,  integer& num)
 {
         cout << "请输入一个帧数：";
         in >> num.m_value;

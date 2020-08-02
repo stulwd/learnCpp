@@ -59,7 +59,7 @@ private:
 
 };
 
-void constDemo3(const computer & computer){
+void constDemo3(const computer& computer){
     //const修饰引用时，不能修改引用对象的任何成员 - 好处是可以保护传递的参数：不需要一个新的参数副本（copy）
     // computer.buy(123);      //非法操作
     //传入的const对象不能调用非const成员函数（传入对象是静态的，意味着不能对对象的内容做修改操作，而没有被const修饰的成员函数中包含了修改操作），但是可以调用const修饰的成员函数

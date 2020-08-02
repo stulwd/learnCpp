@@ -1,6 +1,7 @@
 #include "complex.h"
 
 ostream& operator<<(ostream& out , const complex& other){
+
     out << other.a << "+" << other.b << "i";
     return out;
 }

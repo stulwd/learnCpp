@@ -66,7 +66,6 @@ void sort(int *array, int len){
                 *ptr = *(ptr + 1);
                 *(ptr + 1) = temp;
             }
-
         }
     }
 }
@@ -175,8 +174,7 @@ int main(){
         {"fda","ads","fdas","ads","fdas"},
         {"fda","ads","fdas","ads","fdas"}
     };
-    show(array,2,3);  
-    
+    show(array,2,3);    
     cout << "2的３次方＝" << power(2, 3) << endl;
     // int power(int, int);
     //　声明函数指针

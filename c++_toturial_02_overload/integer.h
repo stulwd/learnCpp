@@ -19,9 +19,9 @@ public:
     friend const integer operator+(int intValue, const integer& other);
     //流运算符一般只能使用友元函数的方式重载
     //今后又可以直接重载流运算，以便封装某个对象的打印格式
-    friend ostream & operator<<(ostream & out, const integer & num);
-    friend istream & operator>>(istream & in, integer & num);
-    const integer operator+(const integer other) const
+    friend ostream& operator<<(ostream& out, const integer& num);
+    friend istream& operator>>(istream& in, integer& num);
+    const integer operator+(const integer& other) const
     {
         integer result(this->m_value + other.m_value);
         return result;
